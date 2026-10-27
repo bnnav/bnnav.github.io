@@ -1,17 +1,17 @@
 :root{
-  --bg:#15181C;
-  --bg-elev:#1C2026;
+  --bg:#121417;
+  --bg-elev:#1A1D21;
   --bg-card:rgba(255,255,255,0.03);
   --bg-card-hover:rgba(255,255,255,0.055);
   --line:rgba(255,255,255,0.10);
   --line-strong:rgba(255,255,255,0.18);
   --silver:#C8CDD2;
-  --silver-bright:#3DBB7E;
-  --accent:#1E7A4C;
+  --silver-bright:#E8EBEE;
+  --accent:#E10600;
   --white:#FFFFFF;
   --muted:#9AA3AD;
-  --glow:rgba(30,122,76,0.55);
-  --glow-soft:rgba(30,122,76,0.16);
+  --glow:rgba(225,6,0,0.55);
+  --glow-soft:rgba(225,6,0,0.16);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -56,7 +56,7 @@ body::before{
 body::after{
   content:"";
   position:fixed;inset:-10%;pointer-events:none;z-index:0;
-  background-image:radial-gradient(circle, rgba(61,187,126,0.75) 1.7px, transparent 2.6px);
+  background-image:radial-gradient(circle, rgba(255,45,45,0.4) 1.7px, transparent 2.6px);
   background-size:14px 14px;
   mask-image:
     radial-gradient(ellipse 35% 30% at 18% 22%, #000, transparent 70%),
@@ -99,8 +99,9 @@ nav a:hover{color:var(--white)}
   background:transparent;
   color:var(--white)!important;
   padding:9px 16px;border-radius:2px;
-  border:1px solid var(--line-strong);
-  box-shadow:0 0 0 0 transparent, inset 0 0 20px var(--glow-soft);
+  background:var(--accent);
+  border:1px solid var(--accent);
+  box-shadow:0 0 16px var(--glow);
 }
 .nav-cta:hover{
   border-color:var(--silver-bright);
@@ -132,7 +133,7 @@ nav a:hover{color:var(--white)}
 .eyebrow{
   font-family:Oswald,Inter,sans-serif;
   font-weight:600;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--silver);font-size:.78rem;margin:0 0 18px;
+  color:var(--silver-bright);font-size:.78rem;margin:0 0 18px;
 }
 .hero h1{
   font-size:clamp(2.2rem,5.4vw,3.75rem);
@@ -306,7 +307,7 @@ nav a:hover{color:var(--white)}
   background:#070708;
   color:var(--muted);
   padding:28px 0;font-size:.88rem;
-  border-top:1px solid var(--line);
+  border-top:2px solid var(--accent);
 }
 .site-footer p{margin:0}
 
@@ -331,3 +332,24 @@ nav a:hover{color:var(--white)}
   body::before,body::after{background-size:12px 12px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* motto */
+.motto{
+  font-family:Oswald,Inter,sans-serif;font-weight:600;
+  text-transform:uppercase;letter-spacing:.24em;font-size:1rem;
+  color:var(--white);margin:-6px 0 22px;padding-left:14px;
+  border-left:4px solid var(--accent);
+  text-shadow:0 0 18px var(--glow);
+}
+.foot-motto{color:var(--silver-bright);font-family:Oswald,Inter,sans-serif;text-transform:uppercase;letter-spacing:.14em}
+.card:hover{border-color:var(--accent)}
+.tagline{font-size:1.15rem;color:var(--white);font-weight:500;margin:0 0 18px;max-width:40ch}
+.gear-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.gear{border:1px solid var(--line);border-top:3px solid var(--accent);background:var(--bg-card);padding:22px 22px 18px;border-radius:2px}
+.gear h3{margin:0 0 8px;font-size:1rem;text-transform:uppercase;letter-spacing:.08em}
+.gear p{margin:0;color:var(--silver)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0;border:1px solid var(--line);background:var(--bg-card);border-radius:2px;overflow:hidden}
+.gallery img{display:block;width:100%;height:260px;object-fit:cover}
+.gallery figcaption{font-family:Oswald,Inter,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;color:var(--silver);padding:10px 12px}
+@media (max-width:860px){.gallery{grid-template-columns:1fr}.gallery img{height:220px}}
