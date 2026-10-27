@@ -1,17 +1,17 @@
 :root{
-  --bg:#0A0A0B;
-  --bg-elev:#111214;
+  --bg:#15181C;
+  --bg-elev:#1C2026;
   --bg-card:rgba(255,255,255,0.03);
   --bg-card-hover:rgba(255,255,255,0.055);
   --line:rgba(255,255,255,0.10);
   --line-strong:rgba(255,255,255,0.18);
   --silver:#C8CDD2;
-  --silver-bright:#FF7A1A;
-  --accent:#E8590C;
+  --silver-bright:#2DD4BF;
+  --accent:#14B8A6;
   --white:#FFFFFF;
-  --muted:#8A9098;
-  --glow:rgba(232,89,12,0.55);
-  --glow-soft:rgba(232,89,12,0.16);
+  --muted:#9AA3AD;
+  --glow:rgba(20,184,166,0.55);
+  --glow-soft:rgba(20,184,166,0.16);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -56,7 +56,7 @@ body::before{
 body::after{
   content:"";
   position:fixed;inset:-10%;pointer-events:none;z-index:0;
-  background-image:radial-gradient(circle, rgba(255,122,26,0.85) 1.7px, transparent 2.6px);
+  background-image:radial-gradient(circle, rgba(45,212,191,0.75) 1.7px, transparent 2.6px);
   background-size:14px 14px;
   mask-image:
     radial-gradient(ellipse 35% 30% at 18% 22%, #000, transparent 70%),
@@ -114,7 +114,7 @@ nav a:hover{color:var(--white)}
   background:
     radial-gradient(ellipse 70% 55% at 70% 40%, rgba(200,205,210,0.10), transparent 60%),
     radial-gradient(ellipse 50% 40% at 15% 80%, rgba(255,255,255,0.05), transparent 55%),
-    linear-gradient(180deg, rgba(14,15,17,0.55) 0%, rgba(10,10,11,0.35) 100%);
+    linear-gradient(180deg, rgba(28,32,38,0.55) 0%, rgba(21,24,28,0.35) 100%);
   color:var(--white);
   padding:96px 0 100px;
   border-bottom:1px solid var(--line);
@@ -172,7 +172,7 @@ nav a:hover{color:var(--white)}
   transition:box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
 }
 .btn-primary{
-  background:var(--accent);color:#fff;
+  background:var(--accent);color:#0B1215;
   box-shadow:0 0 0 1px rgba(255,255,255,0.2), 0 0 28px rgba(232,235,238,0.28);
 }
 .btn-primary:hover{
@@ -218,7 +218,7 @@ nav a:hover{color:var(--white)}
 /* sections */
 .section{padding:80px 0}
 .section.alt{
-  background:linear-gradient(180deg, rgba(17,18,20,0.55), rgba(12,13,15,0.55));
+  background:linear-gradient(180deg, rgba(30,34,40,0.6), rgba(24,27,32,0.6));
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
