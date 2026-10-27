@@ -6,12 +6,12 @@
   --line:rgba(255,255,255,0.10);
   --line-strong:rgba(255,255,255,0.18);
   --silver:#C8CDD2;
-  --silver-bright:#2E9BFF;
-  --accent:#0A84FF;
+  --silver-bright:#FFB020;
+  --accent:#FF9F0A;
   --white:#FFFFFF;
   --muted:#8A9098;
-  --glow:rgba(10,132,255,0.55);
-  --glow-soft:rgba(10,132,255,0.16);
+  --glow:rgba(255,159,10,0.55);
+  --glow-soft:rgba(255,159,10,0.16);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -159,7 +159,7 @@ nav a:hover{color:var(--white)}
   transition:box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
 }
 .btn-primary{
-  background:var(--accent);color:#fff;
+  background:var(--accent);color:#0A0A0B;
   box-shadow:0 0 0 1px rgba(255,255,255,0.2), 0 0 28px rgba(232,235,238,0.28);
 }
 .btn-primary:hover{
