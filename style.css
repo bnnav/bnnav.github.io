@@ -6,12 +6,12 @@
   --line:rgba(255,255,255,0.10);
   --line-strong:rgba(255,255,255,0.18);
   --silver:#C8CDD2;
-  --silver-bright:#2BB3D6;
-  --accent:#0E86A8;
+  --silver-bright:#3DBB7E;
+  --accent:#1E7A4C;
   --white:#FFFFFF;
   --muted:#9AA3AD;
-  --glow:rgba(14,134,168,0.55);
-  --glow-soft:rgba(14,134,168,0.16);
+  --glow:rgba(30,122,76,0.55);
+  --glow-soft:rgba(30,122,76,0.16);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -56,7 +56,7 @@ body::before{
 body::after{
   content:"";
   position:fixed;inset:-10%;pointer-events:none;z-index:0;
-  background-image:radial-gradient(circle, rgba(43,179,214,0.75) 1.7px, transparent 2.6px);
+  background-image:radial-gradient(circle, rgba(61,187,126,0.75) 1.7px, transparent 2.6px);
   background-size:14px 14px;
   mask-image:
     radial-gradient(ellipse 35% 30% at 18% 22%, #000, transparent 70%),
