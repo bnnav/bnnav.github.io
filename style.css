@@ -6,11 +6,11 @@
   --line:rgba(255,255,255,0.10);
   --line-strong:rgba(255,255,255,0.18);
   --silver:#C8CDD2;
-  --silver-bright:#E8EBEE;
-  --white:#F5F6F7;
+  --silver-bright:#B8E8FF;
+  --white:#7FD4FF;
   --muted:#8A9098;
-  --glow:rgba(232,235,238,0.45);
-  --glow-soft:rgba(232,235,238,0.12);
+  --glow:rgba(127,212,255,0.50);
+  --glow-soft:rgba(127,212,255,0.14);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
